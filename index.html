@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raipally Vishnu Vardhan - AI & Machine Learning Engineer, Software Developer, and IT Support Specialist. Portfolio showcasing projects, skills, education, and interactive demos.">
+  <meta name="keywords" content="Raipally Vishnu Vardhan, AI, Machine Learning, Python, C#, JavaScript, CNN, SVM, TensorFlow, OpenCV, Portfolio">
+  <meta name="author" content="Raipally Vishnu Vardhan">
+  <title>Raipally Vishnu Vardhan | AI & ML Engineer | Software Developer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" href="profile.png">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Gradient Background Elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Go to top">
+        <span class="logo-accent">&lt;</span>
+        <span class="logo-text">Vishnu Vardhan</span>
+        <span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav with modern scrollspy grouping -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#terminal" class="nav-link">Terminal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Resume Modal Trigger -->
+        <button class="btn btn-outline btn-sm btn-resume" id="open-resume-btn" aria-label="View Resume Modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation drawer" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="badge-dot"></span>
+            Available for AI/ML & Software Roles
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Raipally Vishnu Vardhan</span>
+          </h1>
+
+          <div class="hero-typing-wrap">
+            <span class="typing-prefix">Specialized in </span>
+            <span class="typing-text" id="typing-text">AI & Machine Learning</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science graduate specializing in <strong>Artificial Intelligence & Machine Learning</strong> from MREC Hyderabad. 
+            Passionate about developing intelligent deep learning models, robust Python & web applications, and providing comprehensive IT & system troubleshooting support.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+            <button class="btn btn-outline" id="hero-resume-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Resume</span>
+            </button>
+          </div>
+
+          <!-- Quick Copy Contact Pills -->
+          <div class="quick-contact-bar">
+            <button class="contact-pill copy-btn" data-copy="vishnuraipallyvishnu@gmail.com" title="Click to copy email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>vishnuraipallyvishnu@gmail.com</span>
+              <span class="pill-badge">Copy</span>
+            </button>
+
+            <button class="contact-pill copy-btn" data-copy="+918919655394" title="Click to copy phone">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91 8919655394</span>
+              <span class="pill-badge">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card glass-card">
+            <div class="profile-avatar">
+              <div class="avatar-image-wrap">
+                <img src="profile.png" alt="Raipally Vishnu Vardhan" class="profile-photo" loading="eager">
+              </div>
+              <div class="status-indicator" title="Online & Ready"></div>
+            </div>
+
+            <div class="profile-info">
+              <h3 class="profile-name">Raipally Vishnu Vardhan</h3>
+              <p class="profile-role">AI & ML Engineer / Developer</p>
+              <p class="profile-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Hyderabad & Sangareddy, Telangana
+              </p>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat-item">
+                <div class="stat-number">78%</div>
+                <div class="stat-label">B.Tech Score</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">ML & Dev Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">SSC Merit</div>
+              </div>
+            </div>
+
+            <div class="profile-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="mailto:vishnuraipallyvishnu@gmail.com" class="social-icon-btn" aria-label="Send Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="tel:+918919655394" class="social-icon-btn" aria-label="Call Phone">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">Professional Summary</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-summary glass-card">
+            <div class="about-profile-header">
+              <div class="about-avatar-wrap">
+                <img src="profile.png" alt="Raipally Vishnu Vardhan" class="about-photo">
+              </div>
+              <div class="about-header-meta">
+                <div class="summary-badge">B.Tech in CSE (AI & ML) • 2022 – 2026</div>
+                <h3 class="about-header-title">Raipally Vishnu Vardhan</h3>
+                <p class="about-header-subtitle">AI & ML Engineer • Software Developer • IT Support Specialist</p>
+              </div>
+            </div>
+            <p class="summary-paragraph">
+              Computer Science graduate specializing in <strong>Artificial Intelligence and Machine Learning</strong> with practical knowledge of <strong>Python, C#, networking, and machine learning concepts</strong>.
+            </p>
+            <p class="summary-paragraph">
+              Skilled in troubleshooting computer systems, managing network and server-related issues, performing software installation and updates, resolving operating system problems, and providing technical support.
+            </p>
+            <p class="summary-paragraph">
+              A quick learner with strong problem-solving abilities, teamwork, and an unwavering passion for continuous learning and contributing to modern software engineering and IT infrastructure support.
+            </p>
+          </div>
+
+          <!-- 3 Pillars -->
+          <div class="pillars-grid">
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">AI & Deep Learning</h3>
+              <p class="pillar-desc">
+                Architecting Convolutional Neural Networks (CNN) for computer vision and training Support Vector Machines (SVM) for predictive healthcare analytics with TensorFlow & Scikit-learn.
+              </p>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Software Engineering</h3>
+              <p class="pillar-desc">
+                Developing clean, reliable desktop & web applications with Python, C#, JavaScript, cryptography libraries, and relational MySQL databases with rigorous privacy standards.
+              </p>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="pillar-title">IT & Systems Support</h3>
+              <p class="pillar-desc">
+                Hands-on troubleshooting of hardware, networking protocols, OS integrity, server maintenance, software deployment, and enterprise technical support workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Proficiencies acquired through computer science coursework, real-world development, and hands-on systems support.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter" role="tablist" aria-label="Skills Category Filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="languages" role="tab" aria-selected="false">Programming</button>
+          <button class="filter-btn" data-filter="aiml" role="tab" aria-selected="false">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web & DB</button>
+          <button class="filter-btn" data-filter="support" role="tab" aria-selected="false">IT & Tools</button>
+        </div>
+
+        <div class="skills-matrix">
+          <!-- Programming Languages -->
+          <div class="skill-category-card glass-card" data-category="languages">
+            <div class="category-header">
+              <div class="category-icon">⚡</div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C# (.NET)</span>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 78%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-category-card glass-card" data-category="aiml">
+            <div class="category-header">
+              <div class="category-icon">🧠</div>
+              <h3>AI & Machine Learning</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TensorFlow</span>
+                  <span class="skill-level">Deep Learning</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CNN (Convolutional Neural Networks)</span>
+                  <span class="skill-level">Computer Vision</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">OpenCV</span>
+                  <span class="skill-level">Image Processing</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Scikit-learn & SVM</span>
+                  <span class="skill-level">Statistical Models</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Cleaning & Feature Extraction</span>
+                  <span class="skill-level">Preprocessing</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 86%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies & Database -->
+          <div class="skill-category-card glass-card" data-category="web">
+            <div class="category-header">
+              <div class="category-icon">🌐</div>
+              <h3>Web & Database</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">Semantic Web</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 & Responsive UI</span>
+                  <span class="skill-level">Flex/Grid/Glass</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">Relational DB</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Cryptography & Secure Auth</span>
+                  <span class="skill-level">Data Protection</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 84%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools & IT Support -->
+          <div class="skill-category-card glass-card" data-category="support">
+            <div class="category-header">
+              <div class="category-icon">🛠️</div>
+              <h3>Tools & IT Infrastructure</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">Version Control</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level">Development IDE</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Computer Systems Troubleshooting</span>
+                  <span class="skill-level">Hardware/OS</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Networking & Server Management</span>
+                  <span class="skill-level">Infrastructure</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Software Installation & OS Support</span>
+                  <span class="skill-level">Maintenance</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 94%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION WITH LIVE DEMOS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world systems engineered across Cryptography, Deep Learning, and Statistical Machine Learning with interactive in-browser simulators.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1: Password Manager -->
+          <article class="project-card glass-card">
+            <div class="project-top">
+              <div class="project-type-badge">Security & Web App</div>
+              <div class="project-status-dot" title="Active Project"></div>
+            </div>
+
+            <div class="project-header">
+              <h3 class="project-title">Password Manager and Secure Notes Application</h3>
+              <p class="project-summary">
+                A secure end-to-end desktop and web application designed for encrypted storage and management of sensitive credentials, passwords, and confidential user notes.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Cryptography</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+
+            <ul class="project-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Built a secure application for storing passwords and confidential notes.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Implemented robust encryption techniques and secure authentication mechanisms.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Ensured strict data privacy, zero-knowledge architectural principles, and followed secure coding practices.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="security-demo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Launch Interactive Demo</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Facial Emotion Detection -->
+          <article class="project-card glass-card featured-glow">
+            <div class="project-top">
+              <div class="project-type-badge badge-ai">Computer Vision & CNN</div>
+              <div class="project-status-dot" title="Active Project"></div>
+            </div>
+
+            <div class="project-header">
+              <h3 class="project-title">Facial Emotion Detection using CNN</h3>
+              <p class="project-summary">
+                An intelligent deep learning pipeline leveraging Convolutional Neural Networks and OpenCV to classify facial expressions across multiple emotional states in real time.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Deep Learning</span>
+            </div>
+
+            <ul class="project-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Designed and implemented a CNN architecture to classify facial emotions with high precision.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Performed robust data preprocessing, face crop alignment, feature extraction, model training, and validation.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Improved model accuracy through batch normalization, dropout regularization, and learning rate scheduling.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="emotion-demo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Launch Interactive Demo</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Lung Cancer Prediction -->
+          <article class="project-card glass-card">
+            <div class="project-top">
+              <div class="project-type-badge badge-ml">Machine Learning & Healthcare</div>
+              <div class="project-status-dot" title="Active Project"></div>
+            </div>
+
+            <div class="project-header">
+              <h3 class="project-title">Lung Cancer Prediction System using SVM</h3>
+              <p class="project-summary">
+                A supervised machine learning clinical decision-support model utilizing Support Vector Machines (SVM) to predict lung cancer risk and stages based on patient clinical indicators.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">SVM</span>
+              <span class="tech-tag">Data Cleaning</span>
+              <span class="tech-tag">Feature Selection</span>
+            </div>
+
+            <ul class="project-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Developed a machine learning model using Support Vector Machines to predict lung cancer stages.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Performed thorough data cleaning, outlier removal, correlation matrix analysis, and feature selection.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Improved prediction accuracy and model reliability through cross-validation and hyperparameter tuning.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="cancer-demo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Launch Interactive Demo</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education Journey</h2>
+          <p class="section-subtitle">Consistent academic record with a strong foundation in computer science and mathematical disciplines.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- B.Tech -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2022 – 2026</span>
+                <span class="timeline-score badge-highlight">78% Agg.</span>
+              </div>
+              <h3 class="timeline-degree">Bachelor of Technology in Computer Science Engineering (AI & ML)</h3>
+              <h4 class="timeline-institution">Malla Reddy College of Engineering and Technology, Hyderabad, Telangana</h4>
+              <p class="timeline-desc">
+                Specializing in core Artificial Intelligence, Neural Networks, Deep Learning, Machine Learning algorithms, Data Structures, Database Management, and Operating Systems.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">AI Specialization</span>
+                <span class="timeline-tag">Machine Learning</span>
+                <span class="timeline-tag">Hyderabad, TS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2020 – 2022</span>
+                <span class="timeline-score badge-highlight">76.5%</span>
+              </div>
+              <h3 class="timeline-degree">Intermediate Education (MPC - Math, Physics, Chemistry)</h3>
+              <h4 class="timeline-institution">Sri Gayatri Junior College, Hyderabad, Telangana</h4>
+              <p class="timeline-desc">
+                Completed higher secondary curriculum with focus on advanced mathematics, calculus, analytical reasoning, and physical sciences.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">MPC Stream</span>
+                <span class="timeline-tag">Higher Secondary</span>
+                <span class="timeline-tag">Hyderabad, TS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- High School -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2019 – 2020</span>
+                <span class="timeline-score badge-gold">98% Distinction</span>
+              </div>
+              <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+              <h4 class="timeline-institution">Sri Sai Krishna High School, Sangareddy, Telangana</h4>
+              <p class="timeline-desc">
+                Graduated with outstanding academic distinction (98%), achieving top rank honors in mathematics and scientific disciplines.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Top Performer</span>
+                <span class="timeline-tag">Sangareddy, TS</span>
+                <span class="timeline-tag">98% Academic Merit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Continuous Learning</span>
+          <h2 class="section-title">Certifications & Accreditations</h2>
+          <p class="section-subtitle">Formal credentials certifying proficiency in artificial intelligence and modern generative AI architectures.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card glass-card">
+            <div class="cert-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-type">Certified Credential</span>
+              <h3 class="cert-title">Introduction to Artificial Intelligence</h3>
+              <p class="cert-desc">
+                Comprehensive training covering foundational AI concepts, search heuristics, knowledge representation, problem formulation, and supervised machine learning methods.
+              </p>
+              <div class="cert-skills">
+                <span class="cert-skill-pill">AI Principles</span>
+                <span class="cert-skill-pill">Search Algorithms</span>
+                <span class="cert-skill-pill">ML Foundations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card">
+            <div class="cert-icon-wrapper cert-gold">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-type">Generative AI Credential</span>
+              <h3 class="cert-title">Generative AI for Beginners</h3>
+              <p class="cert-desc">
+                Study of transformer architectures, Large Language Models (LLMs), prompt engineering paradigms, embeddings, and generative diffusion concepts.
+              </p>
+              <div class="cert-skills">
+                <span class="cert-skill-pill">Generative AI</span>
+                <span class="cert-skill-pill">Transformers & LLMs</span>
+                <span class="cert-skill-pill">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive CLI</span>
+          <h2 class="section-title">Developer Terminal</h2>
+          <p class="section-subtitle">Experience Vishnu's profile via an interactive command-line environment. Type a command or click the preset chips below.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="terminal-container glass-card">
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">vishnu@portfolio-node: ~ (zsh)</div>
+            <div class="terminal-controls">
+              <button class="term-clear-btn" id="term-clear-btn" title="Clear terminal">clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="term-line output-line">
+              <span class="term-dim">Welcome to Vishnu Vardhan's interactive terminal! Type </span><span class="term-highlight">'help'</span><span class="term-dim"> to view all available commands.</span>
+            </div>
+            <div class="term-line output-line">
+              <span class="term-dim">System: </span><span class="term-green">AI & ML Engineer • Python • C# • IT Systems Support</span>
+            </div>
+            <!-- Rendered outputs will be appended here -->
+          </div>
+
+          <div class="terminal-input-wrap">
+            <span class="term-prompt">vishnu@portfolio:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type 'help' or click commands below..." aria-label="Terminal input">
+          </div>
+
+          <div class="terminal-chips">
+            <span class="chips-label">Quick Commands:</span>
+            <button class="term-chip" data-cmd="help">help</button>
+            <button class="term-chip" data-cmd="about">about</button>
+            <button class="term-chip" data-cmd="skills">skills</button>
+            <button class="term-chip" data-cmd="projects">projects</button>
+            <button class="term-chip" data-cmd="education">education</button>
+            <button class="term-chip" data-cmd="contact">contact</button>
+            <button class="term-chip" data-cmd="sudo hire">sudo hire</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating, hiring for AI/ML or software development roles, or technical discussions? Feel free to reach out!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">Email Address</span>
+                <a href="mailto:vishnuraipallyvishnu@gmail.com" class="contact-value">vishnuraipallyvishnu@gmail.com</a>
+              </div>
+              <button class="btn-copy-small copy-btn" data-copy="vishnuraipallyvishnu@gmail.com" title="Copy Email">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">Phone & WhatsApp</span>
+                <a href="tel:+918919655394" class="contact-value">+91 8919655394</a>
+              </div>
+              <button class="btn-copy-small copy-btn" data-copy="+918919655394" title="Copy Phone">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">Location</span>
+                <span class="contact-value">Hyderabad / Sangareddy, Telangana, India</span>
+              </div>
+            </div>
+
+            <div class="social-connect-bar glass-card">
+              <span class="social-label">Profiles:</span>
+              <div class="social-pills">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                  LinkedIn Profile
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                  GitHub Profile
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-column">
+            <form class="contact-form glass-card" id="contact-form">
+              <div class="form-title">Send a Direct Message</div>
+              
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" required placeholder="e.g. Alex Morgan" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" required placeholder="alex@company.com" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required placeholder="Job Opportunity / Project Collaboration" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Vishnu, I came across your portfolio and resume..." class="form-input form-textarea"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-accent">&lt;</span>
+        <span class="logo-text">Raipally Vishnu Vardhan</span>
+        <span class="logo-accent">/&gt;</span>
+        <p class="footer-sub">B.Tech in Computer Science Engineering (AI & ML) • Hyderabad, India</p>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-copy">© <span id="current-year">2026</span> Raipally Vishnu Vardhan. Crafted for performance, accessibility & elegance.</p>
+        <div class="footer-back-to-top">
+          <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================================================== -->
+  <!-- MODALS -->
+  <!-- ==================================================== -->
+
+  <!-- 1. RESUME MODAL -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-card modal-large glass-card">
+      <div class="modal-header">
+        <h3 id="resume-modal-title" class="modal-title">Raipally Vishnu Vardhan — Official Resume</h3>
+        <div class="modal-actions">
+          <button class="btn btn-secondary btn-sm" id="print-resume-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button class="modal-close-btn" id="close-resume-btn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body printable-resume" id="resume-printable-area">
+        <!-- Resume Paper Layout -->
+        <div class="resume-paper">
+          <header class="resume-header">
+            <div class="resume-header-flex">
+              <img src="profile.png" alt="Raipally Vishnu Vardhan" class="resume-photo">
+              <div class="resume-header-text">
+                <h1 class="resume-name">Raipally Vishnu Vardhan</h1>
+                <div class="resume-contacts">
+                  <span>+91 8919655394</span>
+                  <span>•</span>
+                  <a href="mailto:vishnuraipallyvishnu@gmail.com">vishnuraipallyvishnu@gmail.com</a>
+                  <span>•</span>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <span>•</span>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <section class="resume-sec">
+            <h2 class="resume-sec-title">Professional Summary</h2>
+            <p>
+              Computer Science graduate specializing in Artificial Intelligence and Machine Learning with practical knowledge of Python, C#, networking, and machine learning concepts. Skilled in troubleshooting computer systems, managing network and server-related issues, performing software installation and updates, resolving operating system problems, and providing technical support. Quick learner with strong problem-solving abilities, teamwork, and a passion for continuous learning and contributing to software development and IT support.
+            </p>
+          </section>
+
+          <section class="resume-sec">
+            <h2 class="resume-sec-title">Education</h2>
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Malla Reddy College of Engineering and Technology, Hyderabad, Telangana</strong>
+                <span class="resume-year">2022 – 2026</span>
+              </div>
+              <div class="resume-sub">Bachelor of Technology in Computer Science Engineering (AI & ML)</div>
+              <div>Percentage: <strong>78%</strong></div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Sri Gayatri Junior College, Hyderabad, Telangana</strong>
+                <span class="resume-year">2020 – 2022</span>
+              </div>
+              <div>Percentage: <strong>76.5%</strong></div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Sri Sai Krishna High School, Sangareddy, Telangana</strong>
+                <span class="resume-year">2019 – 2020</span>
+              </div>
+              <div>Percentage: <strong>98%</strong></div>
+            </div>
+          </section>
+
+          <section class="resume-sec">
+            <h2 class="resume-sec-title">Projects</h2>
+            
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Password Manager and Secure Notes Application</strong>
+                <span class="resume-tech">Python, Cryptography, HTML, CSS, JavaScript</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Built a secure application for storing passwords and confidential notes.</li>
+                <li>Implemented encryption techniques and secure authentication mechanisms.</li>
+                <li>Ensured data privacy and followed secure coding practices.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Facial Emotion Detection using CNN</strong>
+                <span class="resume-tech">Python, TensorFlow, OpenCV</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Designed and implemented a CNN model to classify facial emotions.</li>
+                <li>Performed data preprocessing, feature extraction, model training, and evaluation.</li>
+                <li>Improved model accuracy using deep learning techniques.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <strong>Lung Cancer Prediction System using SVM</strong>
+                <span class="resume-tech">Python, Scikit-learn</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Developed a machine learning model using SVM to predict lung cancer stages.</li>
+                <li>Performed data cleaning, feature selection, and performance evaluation.</li>
+                <li>Improved prediction accuracy and model reliability.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="resume-sec">
+            <h2 class="resume-sec-title">Technical Skills</h2>
+            <div class="resume-skills-block">
+              <div><strong>Programming Languages:</strong> Python, C#, JavaScript</div>
+              <div><strong>Web Technologies:</strong> HTML, CSS</div>
+              <div><strong>Developer Tools:</strong> Git, GitHub, VS Code</div>
+              <div><strong>Database:</strong> MySQL</div>
+            </div>
+          </section>
+
+          <section class="resume-sec">
+            <h2 class="resume-sec-title">Certifications</h2>
+            <ul class="resume-bullets">
+              <li>Introduction to Artificial Intelligence</li>
+              <li>Generative AI for Beginners</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. PROJECT DEMO 1: PASSWORD & CRYPTOGRAPHY SIMULATOR -->
+  <div class="modal-overlay" id="security-demo-modal" role="dialog" aria-modal="true" aria-labelledby="sec-modal-title">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <h3 id="sec-modal-title" class="modal-title">Password Vault & Cryptography Simulator</h3>
+        <button class="modal-close-btn" data-close-demo>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="demo-intro">
+          This interactive tool demonstrates key cryptographic concepts from the <strong>Password Manager & Secure Notes</strong> project, including real-time entropy calculation, hashing (SHA-256 simulation), and cipher generation.
+        </p>
+
+        <!-- Tab 1: Password Strength & Generator -->
+        <div class="demo-box">
+          <label for="demo-pwd-input" class="demo-label">Test Password / Secret Key:</label>
+          <div class="pwd-input-row">
+            <input type="text" id="demo-pwd-input" class="form-input" value="SecureP@ssw0rd2026!" placeholder="Enter test password...">
+            <button class="btn btn-secondary btn-sm" id="btn-generate-pwd">Generate Random</button>
+          </div>
+
+          <div class="strength-meter-wrap">
+            <div class="strength-header">
+              <span>Security Strength:</span>
+              <strong id="pwd-strength-label">Very Strong</strong>
+            </div>
+            <div class="strength-bar-track">
+              <div class="strength-bar-fill" id="pwd-strength-fill" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="pwd-audit-grid" id="pwd-audit-grid">
+            <div class="audit-item" id="audit-len"><span>✓</span> At least 12 characters</div>
+            <div class="audit-item" id="audit-upper"><span>✓</span> Uppercase letters</div>
+            <div class="audit-item" id="audit-num"><span>✓</span> Numbers included</div>
+            <div class="audit-item" id="audit-sym"><span>✓</span> Special symbols</div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Live Encryption Simulation -->
+        <div class="demo-box">
+          <label for="demo-note-input" class="demo-label">Confidential Note to Encrypt:</label>
+          <input type="text" id="demo-note-input" class="form-input" value="Confidential server credentials: root@192.168.1.100" placeholder="Type secret message...">
+
+          <div class="crypto-output-group">
+            <div class="crypto-meta-label">Simulated AES-256 Encrypted Ciphertext:</div>
+            <div class="crypto-hash-box" id="aes-cipher-box">
+              U2FsdGVkX19q7a...f0a1b2c3d4e5f6
+            </div>
+          </div>
+
+          <div class="crypto-output-group">
+            <div class="crypto-meta-label">Simulated SHA-256 Hash Digest:</div>
+            <div class="crypto-hash-box" id="sha-hash-box">
+              e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PROJECT DEMO 2: CNN EMOTION DETECTION SIMULATOR -->
+  <div class="modal-overlay" id="emotion-demo-modal" role="dialog" aria-modal="true" aria-labelledby="cnn-modal-title">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <h3 id="cnn-modal-title" class="modal-title">CNN Facial Emotion Detection Simulator</h3>
+        <button class="modal-close-btn" data-close-demo>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="demo-intro">
+          Simulating the inference stage of Vishnu's <strong>CNN Emotion Classifier</strong>. Select an expression profile to run preprocessing, convolution feature mapping, and softmax classification.
+        </p>
+
+        <div class="emotion-preset-selector">
+          <label class="demo-label">Select Test Face Sample:</label>
+          <div class="preset-buttons">
+            <button class="preset-btn active" data-emotion="Happy" data-prob="0.94">😊 Happy / Joyful</button>
+            <button class="preset-btn" data-emotion="Focused" data-prob="0.88">🧐 Focused / Neutral</button>
+            <button class="preset-btn" data-emotion="Surprised" data-prob="0.91">😲 Surprised</button>
+            <button class="preset-btn" data-emotion="Thoughtful" data-prob="0.85">🤔 Thoughtful</button>
+          </div>
+        </div>
+
+        <div class="cnn-pipeline-display">
+          <div class="pipeline-step">
+            <div class="step-label">1. Input Image</div>
+            <div class="step-box" id="cnn-input-preview">
+              <span class="preview-emoji">😊</span>
+              <span class="preview-text">48x48 Grayscale</span>
+            </div>
+          </div>
+          <div class="pipeline-arrow">➔</div>
+          <div class="pipeline-step">
+            <div class="step-label">2. Conv2D + Pool</div>
+            <div class="step-box feature-box">
+              <div class="feature-map-grid">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-text">128 Filters</span>
+            </div>
+          </div>
+          <div class="pipeline-arrow">➔</div>
+          <div class="pipeline-step">
+            <div class="step-label">3. Softmax Output</div>
+            <div class="step-box output-badge" id="cnn-final-verdict">
+              <strong id="cnn-predicted-emotion">Happy</strong>
+              <span id="cnn-confidence-pct">94.2%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="probabilities-wrap">
+          <div class="prob-title">Class Probability Distribution:</div>
+          <div class="prob-row">
+            <span class="prob-name">Happy</span>
+            <div class="prob-bar"><div class="prob-fill" id="prob-happy" style="width: 94%;"></div></div>
+            <span class="prob-val" id="val-happy">94%</span>
+          </div>
+          <div class="prob-row">
+            <span class="prob-name">Neutral</span>
+            <div class="prob-bar"><div class="prob-fill" id="prob-neutral" style="width: 3%;"></div></div>
+            <span class="prob-val" id="val-neutral">3%</span>
+          </div>
+          <div class="prob-row">
+            <span class="prob-name">Surprise</span>
+            <div class="prob-bar"><div class="prob-fill" id="prob-surprise" style="width: 2%;"></div></div>
+            <span class="prob-val" id="val-surprise">2%</span>
+          </div>
+          <div class="prob-row">
+            <span class="prob-name">Sad</span>
+            <div class="prob-bar"><div class="prob-fill" id="prob-sad" style="width: 1%;"></div></div>
+            <span class="prob-val" id="val-sad">1%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. PROJECT DEMO 3: LUNG CANCER SVM PREDICTOR -->
+  <div class="modal-overlay" id="cancer-demo-modal" role="dialog" aria-modal="true" aria-labelledby="svm-modal-title">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <h3 id="svm-modal-title" class="modal-title">SVM Lung Cancer Risk Prediction Simulator</h3>
+        <button class="modal-close-btn" data-close-demo>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="demo-intro">
+          Simulating the <strong>Support Vector Machine (SVM)</strong> decision boundary classifier. Adjust patient parameters to compute the hyperplane distance and predicted diagnostic stage.
+        </p>
+
+        <div class="svm-controls">
+          <div class="svm-slider-group">
+            <div class="slider-header">
+              <span>Patient Age:</span>
+              <strong id="val-age">45 years</strong>
+            </div>
+            <input type="range" id="slider-age" min="20" max="85" value="45" class="form-range">
+          </div>
+
+          <div class="svm-slider-group">
+            <div class="slider-header">
+              <span>Smoking Index (Cigarettes/day & history):</span>
+              <strong id="val-smoking">Level 2 (Moderate)</strong>
+            </div>
+            <input type="range" id="slider-smoking" min="0" max="4" value="2" class="form-range">
+          </div>
+
+          <div class="svm-slider-group">
+            <div class="slider-header">
+              <span>Environmental Air Pollution Exposure:</span>
+              <strong id="val-pollution">Medium (5/10)</strong>
+            </div>
+            <input type="range" id="slider-pollution" min="1" max="10" value="5" class="form-range">
+          </div>
+
+          <div class="svm-slider-group">
+            <div class="slider-header">
+              <span>Respiratory Symptoms (Wheezing / Chest Tightness):</span>
+              <strong id="val-symptoms">Mild (3/10)</strong>
+            </div>
+            <input type="range" id="slider-symptoms" min="0" max="10" value="3" class="form-range">
+          </div>
+        </div>
+
+        <div class="svm-result-card" id="svm-result-card">
+          <div class="result-header">SVM Decision Boundary Classification:</div>
+          <div class="result-verdict" id="svm-verdict">Low Risk / Early Detection</div>
+          <div class="result-details">
+            <div class="detail-item">
+              <span>Hyperplane Margin Distance:</span>
+              <strong id="svm-margin">+1.82 (Safe Margin)</strong>
+            </div>
+            <div class="detail-item">
+              <span>Model Prediction Confidence:</span>
+              <strong id="svm-confidence">89.4%</strong>
+            </div>
+            <div class="detail-item">
+              <span>Recommended Action:</span>
+              <strong id="svm-action">Routine annual checkup</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
