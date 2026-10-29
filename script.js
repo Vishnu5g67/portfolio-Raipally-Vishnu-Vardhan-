@@ -590,6 +590,7 @@ Skilled in resolving OS, networking, server problems, and engineering production
     Encrypted storage, AES/SHA hashing, zero-knowledge privacy architecture.
 <span class="term-amber">[2] Facial Emotion Detection using CNN:</span> Python, TensorFlow, OpenCV
     Convolutional Neural Network classifying emotions in real time.
+    <span class="term-green">Live App:</span> <a href="https://facial-emotion-detection-ai-a84f.onrender.com" target="_blank" class="term-highlight">facial-emotion-detection-ai-a84f.onrender.com</a>
 <span class="term-amber">[3] Lung Cancer Prediction System using SVM:</span> Python, Scikit-learn
     Clinical stage decision support with Support Vector Machines.`,
 
